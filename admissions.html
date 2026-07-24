@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admissions Application | Skytop College</title>
+<meta name="description" content="Apply for admission to Skytop College — Creche, Nursery, Primary, and College levels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand"><a href="index.html">
+      <img src="logo.jpg" alt="Skytop Schools crest">
+      <div class="brand-text">
+        <span class="name">Skytop College</span>
+        <span class="sub">Igbogbo · Ikorodu · Lagos</span></a>
+      </div>
+    </div>
+    <nav class="links">
+      <a href="index.html#about">About</a>
+      <a href="founder.html">Founder</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#vision">Vision &amp; Mission</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="admissions.html" class="nav-cta">Apply Now</a>
+    <button class="menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="breadcrumb"><a href="index.html">Home</a> / Admissions</span>
+    <span class="eyebrow" style="color:var(--sky-soft)">Admissions Application</span>
+    <h1>Begin your child's journey at Skytop College</h1>
+    <p>Admission is currently open for Creche, Nursery, Primary, and College / Secondary levels. Fill the form below and our admissions team will reach out within 48 hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:840px;">
+
+    <div class="form-note reveal">
+      This form collects your application in your device only. Submitting will open your email app with the details pre-filled, ready to send to our admissions office — or you can call us directly on <a href="tel:08071910953" style="color:var(--navy); font-weight:700;">08071910953</a>.
+    </div>
+
+    <form class="form-shell reveal" id="admissionForm">
+
+      <div class="form-section-title"><span class="n">1</span> Pupil / Student Information</div>
+      <div class="form-grid">
+        <div class="field full">
+          <label>Full Name <span class="req">*</span></label>
+          <input type="text" name="studentName" required placeholder="e.g. Chidinma Okafor">
+        </div>
+        <div class="field">
+          <label>Date of Birth <span class="req">*</span></label>
+          <input type="date" name="dob" required>
+        </div>
+        <div class="field">
+          <label>Gender <span class="req">*</span></label>
+          <div class="radio-row" style="margin-top:10px;">
+            <label class="radio-opt"><input type="radio" name="gender" value="Male" required> Male</label>
+            <label class="radio-opt"><input type="radio" name="gender" value="Female"> Female</label>
+          </div>
+        </div>
+        <div class="field">
+          <label>Level Applying For <span class="req">*</span></label>
+          <select name="level" required>
+            <option value="" disabled selected>Select a level</option>
+            <option>Creche</option>
+            <option>Nursery</option>
+            <option>Primary</option>
+            <option>College / Secondary</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Class / Grade Applying For</label>
+          <input type="text" name="classLevel" placeholder="e.g. Primary 3, JSS1">
+        </div>
+        <div class="field full">
+          <label>Previous School (if any)</label>
+          <input type="text" name="prevSchool" placeholder="Name of previous school">
+        </div>
+      </div>
+
+      <div class="form-section-title"><span class="n">2</span> Parent / Guardian Information</div>
+      <div class="form-grid">
+        <div class="field">
+          <label>Parent / Guardian Full Name <span class="req">*</span></label>
+          <input type="text" name="guardianName" required placeholder="e.g. Mr. & Mrs. Okafor">
+        </div>
+        <div class="field">
+          <label>Relationship to Applicant <span class="req">*</span></label>
+          <input type="text" name="relationship" required placeholder="e.g. Father, Mother, Guardian">
+        </div>
+        <div class="field">
+          <label>Phone Number <span class="req">*</span></label>
+          <input type="tel" name="phone" required placeholder="08012345678">
+        </div>
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="you@example.com">
+        </div>
+        <div class="field full">
+          <label>Home Address <span class="req">*</span></label>
+          <input type="text" name="address" required placeholder="House number, street, area">
+        </div>
+      </div>
+
+      <div class="form-section-title"><span class="n">3</span> Additional Information</div>
+      <div class="form-grid">
+        <div class="field full">
+          <label>How did you hear about Skytop College?</label>
+          <select name="referral">
+            <option value="" disabled selected>Select an option</option>
+            <option>Word of mouth / Referral</option>
+            <option>Social Media</option>
+            <option>Church / Community</option>
+            <option>Walked in / Saw the school</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Any additional message or question</label>
+          <textarea name="message" placeholder="Let us know anything else we should be aware of"></textarea>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+        <p>Fields marked <span class="req">*</span> are required.</p>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<section class="bg-tint">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:0;">
+      <span class="eyebrow">Prefer to Apply in Person?</span>
+      <h2>Visit or call our admissions office</h2>
+      <p>1, Odusanya Olugbode Avenue, Selewu Igbogbo, Ikorodu, Lagos &nbsp;·&nbsp; 08071910953 / 08035161485</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/logo.jpg" alt="Skytop Schools crest">
+          <span>Skytop College</span>
+        </div>
+        <p style="max-width:36ch; font-size:.9rem;">Knowledge, Integrity and Service — a private Christian institution in Selewu-Igbogbo, Ikorodu, Lagos State.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="founder.html">Our Founder</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="admissions.html">Admissions Form</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>1, Odusanya Olugbode Avenue, Selewu Igbogbo</li>
+          <li>08071910953</li>
+          <li>08035161485</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Skytop College. All rights reserved.</span>
+      <span>Igbogbo · Ikorodu · Lagos State</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function(){
+    var links = document.querySelector('nav.links');
+    var open = links.style.display === 'flex';
+    links.style.display = open ? 'none' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '70px';
+    links.style.right = '20px';
+    links.style.background = 'var(--navy-deep)';
+    links.style.padding = '20px';
+    links.style.borderRadius = '6px';
+    links.style.gap = '16px';
+  });
+
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: .1 });
+  revealEls.forEach(function(el){ io.observe(el); });
+
+  document.getElementById('admissionForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = new FormData(e.target);
+    var lines = [
+      'NEW ADMISSION APPLICATION - SKYTOP COLLEGE',
+      '',
+      '--- Student Information ---',
+      'Full Name: ' + f.get('studentName'),
+      'Date of Birth: ' + f.get('dob'),
+      'Gender: ' + f.get('gender'),
+      'Level Applying For: ' + f.get('level'),
+      'Class/Grade: ' + (f.get('classLevel') || 'N/A'),
+      'Previous School: ' + (f.get('prevSchool') || 'N/A'),
+      '',
+      '--- Parent/Guardian Information ---',
+      'Name: ' + f.get('guardianName'),
+      'Relationship: ' + f.get('relationship'),
+      'Phone: ' + f.get('phone'),
+      'Email: ' + (f.get('email') || 'N/A'),
+      'Address: ' + f.get('address'),
+      '',
+      '--- Additional Information ---',
+      'Referral Source: ' + (f.get('referral') || 'N/A'),
+      'Message: ' + (f.get('message') || 'N/A')
+    ].join('\n');
+
+    var subject = encodeURIComponent('Admission Application - ' + f.get('studentName'));
+    var body = encodeURIComponent(lines);
+    window.location.href = 'mailto:info@skytopcollege.example?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+</body>
+</html>

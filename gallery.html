@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery &amp; Hall of Fame | Skytop College</title>
+<meta name="description" content="Explore Skytop College's gallery of school life, activities, and Hall of Fame — celebrating our top achievers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand"><a href="index.html">
+      <img src="assets/logo.jpg" alt="Skytop Schools crest">
+      <div class="brand-text">
+        <span class="name">Skytop College</span>
+        <span class="sub">Igbogbo · Ikorodu · Lagos</span></a>
+      </div>
+    </div>
+    <nav class="links">
+      <a href="index.html#about">About</a>
+      <a href="founder.html">Founder</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#vision">Vision &amp; Mission</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a href="admissions.html" class="nav-cta">Apply Now</a>
+    <button class="menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="breadcrumb"><a href="index.html">Home</a> / Gallery</span>
+    <span class="eyebrow" style="color:var(--sky-soft)">Gallery &amp; Hall of Fame</span>
+    <h1>School life, activities, and our top achievers</h1>
+    <p>A look inside Skytop College — from classroom moments to excursions, music, sports, and the students who make us proud.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Activities Showcase</span>
+      <h2>Moments from around the school</h2>
+      <p>Real photos are on the way — for now, here's a look at the categories of school life we'll be filling this gallery with.</p>
+    </div>
+
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="academics">Academics</button>
+      <button class="filter-btn" data-filter="music">Music</button>
+      <button class="filter-btn" data-filter="excursion">Excursions</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="chapel">Chapel</button>
+    </div>
+
+    <div class="gallery-masonry reveal" id="masonry">
+      <div class="gitem t1 tall" data-cat="academics">
+        <div class="gitem-inner"><span class="tag">Academics</span><h4>Classroom Sessions</h4><p>Focused learning, every day.</p></div>
+      </div>
+      <div class="gitem t2" data-cat="music">
+        <div class="gitem-inner"><img src="music.jpg"><span class="tag">Music</span><h4>Instrument Practice</h4><p>Skytop Music Program in session.</p></div>
+      </div>
+      <div class="gitem t3 short" data-cat="academics">
+        <div class="gitem-inner"><img src="Laboratory.png"><span class="tag">Academics</span><h4>Laboratory Work</h4><p>Hands-on science exploration.</p></div>
+      </div>
+      <div class="gitem t4 tall" data-cat="excursion">
+        <div class="gitem-inner"><img src="excursion.jpg"><span class="tag">Excursion</span><h4>Field Learning</h4><p>Education, exploration &amp; recreation.</p></div>
+      </div>
+      <div class="gitem t5" data-cat="sports">
+        <div class="gitem-inner"><span class="tag">Sports</span><h4>Inter-House Sports</h4><p>Physical &amp; health education in action.</p></div>
+      </div>
+      <div class="gitem t6 short" data-cat="chapel">
+        <div class="gitem-inner"><span class="tag">Chapel</span><h4>Morning Devotion</h4><p>Grounded in Christian values.</p></div>
+      </div>
+      <div class="gitem t2 tall" data-cat="music">
+        <div class="gitem-inner"><span class="tag">Music</span><h4>School Choir</h4><p>Voices raised in worship &amp; praise.</p></div>
+      </div>
+      <div class="gitem t3" data-cat="excursion">
+        <div class="gitem-inner"><img src="Nature.jpg"><span class="tag">Excursion</span><h4>Nature Walk</h4><p>Learning beyond the classroom walls.</p></div>
+      </div>
+      <div class="gitem t1 short" data-cat="sports">
+        <div class="gitem-inner"><span class="tag">Sports</span><h4>Athletics Day</h4><p>Talent and teamwork on display.</p></div>
+      </div>
+      <div class="gitem t4" data-cat="academics">
+        <div class="gitem-inner"><img src="classroom.png"><span class="tag">Academics</span><h4>Group Projects</h4><p>Collaborative, intellectual growth.</p></div>
+      </div>
+      <div class="gitem t5 tall" data-cat="chapel">
+        <div class="gitem-inner"><span class="tag">Chapel</span><h4>Sunday Service</h4><p>A training field of values and morals.</p></div>
+      </div>
+      <div class="gitem t6" data-cat="music">
+        <div class="gitem-inner"><span class="tag">Music</span><h4>Recital Evening</h4><p>Students performing what they've mastered.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-tint">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Hall of Fame</span>
+      <h2>Celebrating our top achievers</h2>
+      <p>Every session, we honour the students who set the standard — in academics, character, sports, and the arts.</p>
+    </div>
+    <div class="hof-grid reveal">
+      <div class="hof-card">
+        <div class="hof-photo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </div>
+        <div class="hof-body">
+          <span class="badge">Best Graduating Student</span>
+          <h4>[Student Name]</h4>
+          <p>Session 2025/2026</p>
+        </div>
+      </div>
+      <div class="hof-card">
+        <div class="hof-photo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <div class="hof-body">
+          <span class="badge">Most Disciplined</span>
+          <h4>[Student Name]</h4>
+          <p>Session 2025/2026</p>
+        </div>
+      </div>
+      <div class="hof-card">
+        <div class="hof-photo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="hof-body">
+          <span class="badge">Music Excellence</span>
+          <h4>[Student Name]</h4>
+          <p>Session 2025/2026</p>
+        </div>
+      </div>
+      <div class="hof-card">
+        <div class="hof-photo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <div class="hof-body">
+          <span class="badge">Sports Champion</span>
+          <h4>[Student Name]</h4>
+          <p>Session 2025/2026</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:26px; color:var(--grey); font-size:.88rem;">Placeholder entries — send the names, categories, and photos of your actual honourees and I'll update this section directly.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/logo.jpg" alt="Skytop Schools crest">
+          <span>Skytop College</span>
+        </div>
+        <p style="max-width:36ch; font-size:.9rem;">Knowledge, Integrity and Service — a private Christian institution in Selewu-Igbogbo, Ikorodu, Lagos State.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="founder.html">Our Founder</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="admissions.html">Admissions Form</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>1, Odusanya Olugbode Avenue, Selewu Igbogbo</li>
+          <li>08071910953</li>
+          <li>08035161485</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Skytop College. All rights reserved.</span>
+      <span>Igbogbo · Ikorodu · Lagos State</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function(){
+    var links = document.querySelector('nav.links');
+    var open = links.style.display === 'flex';
+    links.style.display = open ? 'none' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '70px';
+    links.style.right = '20px';
+    links.style.background = 'var(--navy-deep)';
+    links.style.padding = '20px';
+    links.style.borderRadius = '6px';
+    links.style.gap = '16px';
+  });
+
+  var buttons = document.querySelectorAll('.filter-btn');
+  var items = document.querySelectorAll('.gitem');
+  buttons.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      buttons.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      items.forEach(function(it){
+        it.style.display = (f === 'all' || it.getAttribute('data-cat') === f) ? '' : 'none';
+      });
+    });
+  });
+
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: .1 });
+  revealEls.forEach(function(el){ io.observe(el); });
+</script>
+
+</body>
+</html>
